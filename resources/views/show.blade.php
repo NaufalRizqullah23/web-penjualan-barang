@@ -9,6 +9,7 @@
                     <form action="{{ '/aksiBeli' }}" method="post">
                         @csrf
                         <div class="form-group">
+                            <input type="text" hidden class="form-control"  name="id_barang" value="{{$barang->id_barang}}">
                             <label for="nama">Nama Barang</label>
                             <input type="text" name="nama_barang" class="form-control" placeholder="Air Mineral" value="{{ $barang->nama_barang }}" disabled>
                         </div>

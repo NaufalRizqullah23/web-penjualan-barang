@@ -5,11 +5,11 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-lg-8">
-                <h1>Daftar Barang</h1>
+                <h1>Daftar Barang PT. Berkah Perkasa</h1>
                 
             </div>
             
-                <table class="table-bordered">
+                <table class="table table-dark table-borderless text-center">
                     
                     <tr>
                         <th>ID.</th>
@@ -31,13 +31,23 @@
                     
                     @endforeach
                 </table>
+                
+                <div class="mt3">
+                    @if(session('tampil'))
+           {{session('tampil')}}
+                @endif
+                </div>
             
             <div class="mt-3">
                 <table class="table table-borderless">
                     <tr>
                         <th>
-                            <a href="{{ url('create') }}" class="btn btn-primary" class="te">Tambah Barang</a>
+                            <a href="{{ url('create') }}" class="btn btn-primary">Tambah Barang</a>
+                            <a href="{{ route('dataPenjualan') }}" class="btn btn-info">Daftar Penjualan</a>
                         </th>
+                        {{-- <th>
+                            <a href="{{ route('dataPenjualan') }}" class="btn btn-info">Daftar Penjualan</a>
+                        </th> --}}
                         <th>
                             <form action="" method="GET" style="text-align: right">
                                 <label>Pilih :</label>
@@ -47,6 +57,7 @@
                         </th>
                     </tr>
                 </table>
+                
                  
                         
                    

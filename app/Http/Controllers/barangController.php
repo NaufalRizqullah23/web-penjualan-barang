@@ -16,7 +16,7 @@ class barangController extends Controller
     {
         $data = barangModel::all();
         if ($request->has('cari')) {
-            $data = \App\Models\barangModel::where('id','LIKE', '%' . $request->cari . '%')->get();
+            $data = \App\Models\barangModel::where('id_barang','LIKE', '%' . $request->cari . '%')->get();
         } else {
             $data = barangModel::all();
         }

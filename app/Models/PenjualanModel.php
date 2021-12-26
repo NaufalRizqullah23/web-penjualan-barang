@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class PenjualanModel extends Model
 {
     use HasFactory;
-    protected $table = 'pembelian';
-    protected $primaryKey = 'id_pembelian';
-    public $timeStamps = false;
+    protected $table = 'penjualan';
+    protected $primaryKey = 'id_pembeli';
+    public $timestamps = false;
 }
