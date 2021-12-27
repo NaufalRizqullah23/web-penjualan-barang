@@ -85,11 +85,6 @@ class barangController extends Controller
         $item = barangModel::findOrFail($id);
         $data = $request->except(['_token']);
         $item->update($data);
-        // $data = barang::find($req->$id);
-        // $st = $harga_barang * $ij;
-        // if($st >= 50000){
-        //     $st * 0.9;
-        // }
         return redirect('/');
 
     }

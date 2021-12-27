@@ -24,7 +24,6 @@
                             <td>{{ $dataBarang->harga_barang }}</td>
                             <td><center>
                                 <a href="{{ route('beli', $dataBarang->id_barang) }}" class="btn btn-success text-center">Beli</a>
-                                {{-- <a href="{{ url('/delete/'. $dataBarang->id) }}" class="btn btn-danger">Delete</a> --}}
                             </center>
                             </td>
                         </tr>
@@ -45,9 +44,6 @@
                             <a href="{{ url('create') }}" class="btn btn-primary">Tambah Barang</a>
                             <a href="{{ route('dataPenjualan') }}" class="btn btn-info">Daftar Penjualan</a>
                         </th>
-                        {{-- <th>
-                            <a href="{{ route('dataPenjualan') }}" class="btn btn-info">Daftar Penjualan</a>
-                        </th> --}}
                         <th>
                             <form action="" method="GET" style="text-align: right">
                                 <label>Pilih :</label>

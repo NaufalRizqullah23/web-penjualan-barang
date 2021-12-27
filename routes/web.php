@@ -22,8 +22,6 @@ Route::get('/',[barangController::class,'index'])->name('index');
 Route::get('/create',[barangController::class,'create']);
 Route::post('/store',[barangController::class,'store']);
 Route::get('/show/{id}',[barangController::class,'show']);
-Route::post('/update/{id}',[barangController::class,'update']);
-Route::get('/delete/{id}',[barangController::class,'destroy']);
 Route::get('/beli/{id}',[PenjualanController::class,'beli'])->name('beli');
 Route::post('/aksiBeli',[PenjualanController::class,'aksiBeli']);
 Route::get('/dataPenjualan',[PenjualanController::class,'getDataPenjualan'])->name('dataPenjualan');
